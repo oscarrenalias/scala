@@ -1,0 +1,23 @@
+<lift:surround with="default" at="content"> 
+    <lift:Guestbook.add form="post"> 
+      <table> 
+        <tr> 
+          <td>User:</td> 
+          <td><guestbook:user /></td> 
+        </tr> 
+        <tr> 
+          <td>Message:</td> 
+          <td><guestbook:message /></td> 
+        </tr> 
+        <tr> 
+          <td>&nbsp;</td> 
+          <td> 
+            <guestbook:submit> 
+              <button>Send</button> 
+            </guestbook:submit> 
+          </td> 
+        </tr> 
+      </table> 
+    </lift:Guestbook.add> 
+</lift:surround>
+
