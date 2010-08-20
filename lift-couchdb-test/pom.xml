@@ -98,6 +98,17 @@
     <sourceDirectory>src/main/scala</sourceDirectory>
     <testSourceDirectory>src/test/scala</testSourceDirectory>
     <plugins>
+		<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>jboss-maven-plugin</artifactId>
+			<configuration>
+				<jbossHome>C:\Users\oscar.renalias\bin\jbossesb-server-4.9</jbossHome>
+				<port>8080</port>
+				<fileNames>
+					<fileName>${project.basedir}/target/${build.finalName}.war</fileName>
+				</fileNames>
+			</configuration>
+	  </plugin>	
       <plugin>
         <groupId>org.scala-tools</groupId>
         <artifactId>maven-scala-plugin</artifactId>
