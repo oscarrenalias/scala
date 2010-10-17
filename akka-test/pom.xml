@@ -1,0 +1,140 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.renalias</groupId>
+  <artifactId>net.renalias.akka-test</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <inceptionYear>2008</inceptionYear>
+  <properties>
+    <scala.version>2.8.0</scala.version>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>scala-tools.org</id>
+      <name>Scala-Tools Maven2 Repository</name>
+      <url>http://scala-tools.org/repo-releases</url>
+    </repository>
+
+	<!-- Akka repositories -->
+	<repository>
+		<id>Akka</id>
+		<name>Akka Maven2 Repository</name>
+		<url>http://www.scalablesolutions.se/akka/repository/ </url>
+	</repository>
+	<repository>
+		<id>Multiverse</id>
+		<name>Multiverse Maven2 Repository</name>
+		<url>http://multiverse.googlecode.com/svn/maven-repository/releases/</url>
+	</repository>
+	<repository>
+		<id>GuiceyFruit</id>
+		<name>GuiceyFruit Maven2 Repository</name>
+		<url>http://guiceyfruit.googlecode.com/svn/repo/releases/ </url>
+	</repository>
+	<repository>
+		<id>JBoss</id>
+		<name>JBoss Maven2 Repository</name>
+		<url>https://repository.jboss.org/nexus/content/groups/public/ </url>
+	</repository>
+	
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>scala-tools.org</id>
+      <name>Scala-Tools Maven2 Repository</name>
+      <url>http://scala-tools.org/repo-releases</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <version>${scala.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.4</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.specs</groupId>
+      <artifactId>specs</artifactId>
+      <version>1.2.5</version>
+      <scope>test</scope>
+    </dependency>
+	<dependency>
+	  <groupId>se.scalablesolutions.akka</groupId>
+	  <artifactId>akka-core_2.8.0</artifactId>
+	  <version>0.10</version>
+	</dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/main/scala</sourceDirectory>
+    <testSourceDirectory>src/test/scala</testSourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.scala-tools</groupId>
+        <artifactId>maven-scala-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>testCompile</goal>
+            </goals>
+          </execution>
+        </executions>
+		<configuration>
+			<charset>${project.build.sourceEncoding}</charset>
+			<jvmArgs>
+				<jvmArg>-Xmx1024m</jvmArg>
+				<jvmArg>-DpackageLinkDefs=file://${project.build.directory}/packageLinkDefs.properties</jvmArg>
+			</jvmArgs>
+			<mainConsole>LiftConsole</mainConsole>
+			<!-- launcher for the standalone server -->
+			<launchers>
+				<launcher>
+					<id>server</id>
+					<mainClass>ServerInitiatedRemoteActorServer</mainClass>
+				</launcher>
+				<launcher>
+					<id>client</id>
+					<mainClass>RemoteActorClient</mainClass>
+				</launcher>				
+			</launchers>
+		</configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <configuration>
+          <downloadSources>true</downloadSources>
+          <buildcommands>
+            <buildcommand>ch.epfl.lamp.sdt.core.scalabuilder</buildcommand>
+          </buildcommands>
+          <additionalProjectnatures>
+            <projectnature>ch.epfl.lamp.sdt.core.scalanature</projectnature>
+          </additionalProjectnatures>
+          <classpathContainers>
+            <classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+            <classpathContainer>ch.epfl.lamp.sdt.launching.SCALA_CONTAINER</classpathContainer>
+          </classpathContainers>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.scala-tools</groupId>
+        <artifactId>maven-scala-plugin</artifactId>
+        <configuration>
+          <scalaVersion>${scala.version}</scalaVersion>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+</project>

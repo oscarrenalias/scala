@@ -1,0 +1,13 @@
+[WARN] [2010-10-17 21:04:52,930] [main] s.s.a.c.Config$: 
+Can't load 'akka.conf'.
+One of the three ways of locating the 'akka.conf' file needs to be defined:
+	1. Define the '-Dakka.config=...' system property option.
+	2. Put the 'akka.conf' file on the classpath.
+	3. Define 'AKKA_HOME' environment variable pointing to the root of the Akka distribution.
+I have no way of finding the 'akka.conf' configuration file.
+Using default values everywhere.
+[INFO] [2010-10-17 21:04:53,261] [main] s.s.a.r.RemoteNode$: Starting remote server at [localhost:9999]
+[DEBUG] [2010-10-17 21:04:53,338] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Creating a se.scalablesolutions.akka.dispatch.Dispatchers$globalExecutorBasedEventDrivenDispatcher$ with config [core-pool:16,max-pool:128,timeout:60000,allowCoreTimeout:false,rejectPolicy:CallerRunsPolicy]
+[DEBUG] [2010-10-17 21:04:53,375] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Starting up ExecutorBasedEventDrivenDispatcher[akka:event-driven:dispatcher:global]
+	with throughput [5]
+[DEBUG] [2010-10-17 21:04:53,386] [main] s.s.a.r.RemoteNode$: Registering server side remote actor [HelloWorldActor] with id [hello-service]

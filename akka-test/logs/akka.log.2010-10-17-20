@@ -1,0 +1,176 @@
+[WARN] [2010-10-17 20:13:31,095] [main] s.s.a.c.Config$: 
+Can't load 'akka.conf'.
+One of the three ways of locating the 'akka.conf' file needs to be defined:
+	1. Define the '-Dakka.config=...' system property option.
+	2. Put the 'akka.conf' file on the classpath.
+	3. Define 'AKKA_HOME' environment variable pointing to the root of the Akka distribution.
+I have no way of finding the 'akka.conf' configuration file.
+Using default values everywhere.
+[INFO] [2010-10-17 20:13:31,435] [main] s.s.a.r.RemoteNode$: Starting remote server at [localhost:9999]
+[ERROR] [2010-10-17 20:13:31,501] [main] s.s.a.r.RemoteNode$: Could not start up remote server
+org.jboss.netty.channel.ChannelException: Failed to bind to: localhost/127.0.0.1:9999
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:306) ~[netty-3.2.1.Final.jar:na]
+	at se.scalablesolutions.akka.remote.RemoteServer.liftedTree1$1(RemoteServer.scala:241) [akka-core_2.8.0-0.10.jar:na]
+	at se.scalablesolutions.akka.remote.RemoteServer.start(RemoteServer.scala:227) [akka-core_2.8.0-0.10.jar:na]
+	at se.scalablesolutions.akka.remote.RemoteServer.start(RemoteServer.scala:221) [akka-core_2.8.0-0.10.jar:na]
+	at ServerInitiatedRemoteActorServer$.run(App.scala:15) [classes/:na]
+	at ServerInitiatedRemoteActorServer$.main(App.scala:19) [classes/:na]
+	at ServerInitiatedRemoteActorServer.main(App.scala) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.6.0_20]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) ~[na:1.6.0_20]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) ~[na:1.6.0_20]
+	at java.lang.reflect.Method.invoke(Method.java:597) ~[na:1.6.0_20]
+	at org_scala_tools_maven_executions.MainHelper.runMain(MainHelper.java:161) [maven-scala-plugin-2.14.2.jar:na]
+	at org_scala_tools_maven_executions.MainWithArgsInFile.main(MainWithArgsInFile.java:26) [maven-scala-plugin-2.14.2.jar:na]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method) ~[na:1.6.0_20]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:119) ~[na:1.6.0_20]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59) ~[na:1.6.0_20]
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:199) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:351) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90) ~[netty-3.2.1.Final.jar:na]
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:285) ~[netty-3.2.1.Final.jar:na]
+	... 12 common frames omitted
+[DEBUG] [2010-10-17 20:13:31,542] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Creating a se.scalablesolutions.akka.dispatch.Dispatchers$globalExecutorBasedEventDrivenDispatcher$ with config [core-pool:16,max-pool:128,timeout:60000,allowCoreTimeout:false,rejectPolicy:CallerRunsPolicy]
+[WARN] [2010-10-17 20:13:47,262] [main] s.s.a.c.Config$: 
+Can't load 'akka.conf'.
+One of the three ways of locating the 'akka.conf' file needs to be defined:
+	1. Define the '-Dakka.config=...' system property option.
+	2. Put the 'akka.conf' file on the classpath.
+	3. Define 'AKKA_HOME' environment variable pointing to the root of the Akka distribution.
+I have no way of finding the 'akka.conf' configuration file.
+Using default values everywhere.
+[INFO] [2010-10-17 20:13:47,582] [main] s.s.a.r.RemoteNode$: Starting remote server at [localhost:9999]
+[DEBUG] [2010-10-17 20:13:47,682] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Creating a se.scalablesolutions.akka.dispatch.Dispatchers$globalExecutorBasedEventDrivenDispatcher$ with config [core-pool:16,max-pool:128,timeout:60000,allowCoreTimeout:false,rejectPolicy:CallerRunsPolicy]
+[DEBUG] [2010-10-17 20:13:47,728] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Starting up ExecutorBasedEventDrivenDispatcher[akka:event-driven:dispatcher:global]
+	with throughput [5]
+[DEBUG] [2010-10-17 20:13:47,750] [main] s.s.a.r.RemoteNode$: Registering server side remote actor [HelloWorldActor] with id [hello-service]
+[WARN] [2010-10-17 20:55:49,543] [main] s.s.a.c.Config$: 
+Can't load 'akka.conf'.
+One of the three ways of locating the 'akka.conf' file needs to be defined:
+	1. Define the '-Dakka.config=...' system property option.
+	2. Put the 'akka.conf' file on the classpath.
+	3. Define 'AKKA_HOME' environment variable pointing to the root of the Akka distribution.
+I have no way of finding the 'akka.conf' configuration file.
+Using default values everywhere.
+[INFO] [2010-10-17 20:55:49,859] [main] s.s.a.r.RemoteNode$: Starting remote server at [localhost:9999]
+[DEBUG] [2010-10-17 20:55:49,937] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Creating a se.scalablesolutions.akka.dispatch.Dispatchers$globalExecutorBasedEventDrivenDispatcher$ with config [core-pool:16,max-pool:128,timeout:60000,allowCoreTimeout:false,rejectPolicy:CallerRunsPolicy]
+[DEBUG] [2010-10-17 20:55:49,975] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Starting up ExecutorBasedEventDrivenDispatcher[akka:event-driven:dispatcher:global]
+	with throughput [5]
+[DEBUG] [2010-10-17 20:55:49,994] [main] s.s.a.r.RemoteNode$: Registering server side remote actor [HelloWorldActor] with id [hello-service]
+[WARN] [2010-10-17 20:56:17,436] [main] s.s.a.c.Config$: 
+Can't load 'akka.conf'.
+One of the three ways of locating the 'akka.conf' file needs to be defined:
+	1. Define the '-Dakka.config=...' system property option.
+	2. Put the 'akka.conf' file on the classpath.
+	3. Define 'AKKA_HOME' environment variable pointing to the root of the Akka distribution.
+I have no way of finding the 'akka.conf' configuration file.
+Using default values everywhere.
+[DEBUG] [2010-10-17 20:56:17,731] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Creating a se.scalablesolutions.akka.dispatch.Dispatchers$globalExecutorBasedEventDrivenDispatcher$ with config [core-pool:16,max-pool:128,timeout:60000,allowCoreTimeout:false,rejectPolicy:CallerRunsPolicy]
+[DEBUG] [2010-10-17 20:56:18,035] [main] s.s.a.r.RemoteClientHandler: [id: 0x66bcb23e] OPEN
+[INFO] [2010-10-17 20:56:18,047] [main] s.s.a.r.RemoteClient: Starting remote client connection to [localhost:9999]
+[DEBUG] [2010-10-17 20:56:18,049] [New I/O client worker #1-1] s.s.a.r.RemoteClientHandler: [id: 0x66bcb23e, /127.0.0.1:49771 => localhost/127.0.0.1:9999] BOUND: /127.0.0.1:49771
+[DEBUG] [2010-10-17 20:56:18,050] [New I/O client worker #1-1] s.s.a.r.RemoteClientHandler: [id: 0x66bcb23e, /127.0.0.1:49771 => localhost/127.0.0.1:9999] CONNECTED: localhost/127.0.0.1:9999
+[DEBUG] [2010-10-17 20:56:18,053] [New I/O client worker #1-1] s.s.a.r.RemoteClientHandler: Remote client connected to [localhost/127.0.0.1:9999]
+[DEBUG] [2010-10-17 20:56:18,251] [New I/O server boss #1 (channelId: 651584550, /127.0.0.1:9999)] s.s.a.r.RemoteServerHandler: [id: 0x21ed5459, /127.0.0.1:49771 => /127.0.0.1:9999] OPEN
+[DEBUG] [2010-10-17 20:56:18,251] [New I/O server boss #1 (channelId: 651584550, /127.0.0.1:9999)] s.s.a.r.RemoteServerHandler: [id: 0x21ed5459, /127.0.0.1:49771 => /127.0.0.1:9999] BOUND: /127.0.0.1:9999
+[DEBUG] [2010-10-17 20:56:18,252] [New I/O server boss #1 (channelId: 651584550, /127.0.0.1:9999)] s.s.a.r.RemoteServerHandler: [id: 0x21ed5459, /127.0.0.1:49771 => /127.0.0.1:9999] CONNECTED: /127.0.0.1:49771
+[DEBUG] [2010-10-17 20:56:18,253] [New I/O server boss #1 (channelId: 651584550, /127.0.0.1:9999)] s.s.a.r.RemoteServerHandler: Remote client connected to [RemoteServer@localhost:9999]
+[DEBUG] [2010-10-17 20:56:18,272] [New I/O server worker #1-1] s.s.a.r.RemoteServerHandler: Received RemoteRequestProtocol[
+id: 1288479028742
+message {
+  serializationScheme: JAVA
+  message: "\254\355\000\005t\000\005Hello"
+}
+actorInfo {
+  uuid: "hello-service"
+  target: "hello-service"
+  timeout: 5000
+  actorType: SCALA_ACTOR
+}
+isOneWay: false
+]
+[DEBUG] [2010-10-17 20:56:18,273] [New I/O server worker #1-1] s.s.a.r.RemoteServerHandler: Dispatching to remote actor [hello-service:hello-service]
+[DEBUG] [2010-10-17 20:56:18,394] [akka:event-driven:dispatcher:global-1] s.s.a.d.ThreadPoolBuilder$MonitorableThread: Created thread akka:event-driven:dispatcher:global-1
+[DEBUG] [2010-10-17 20:56:18,403] [New I/O server worker #1-1] s.s.a.r.RemoteServerHandler: Returning result from actor invocation [World]
+[DEBUG] [2010-10-17 20:56:18,430] [New I/O client worker #1-1] s.s.a.r.RemoteClientHandler: Remote client received RemoteReplyProtocol[
+id: 1288479028742
+message {
+  serializationScheme: JAVA
+  message: "\254\355\000\005t\000\005World"
+}
+isActor: true
+isSuccessful: true
+]
+[DEBUG] [2010-10-17 20:56:36,459] [New I/O server worker #1-1] s.s.a.r.RemoteServerHandler: [id: 0x21ed5459, /127.0.0.1:49771 => /127.0.0.1:9999] DISCONNECTED
+[DEBUG] [2010-10-17 20:56:36,459] [New I/O server worker #1-1] s.s.a.r.RemoteServerHandler: [id: 0x21ed5459, /127.0.0.1:49771 => /127.0.0.1:9999] UNBOUND
+[DEBUG] [2010-10-17 20:56:36,459] [New I/O server worker #1-1] s.s.a.r.RemoteServerHandler: [id: 0x21ed5459, /127.0.0.1:49771 => /127.0.0.1:9999] CLOSED
+[DEBUG] [2010-10-17 20:56:36,460] [New I/O server worker #1-1] s.s.a.r.RemoteServerHandler: Remote client disconnected from [RemoteServer@localhost:9999]
+[WARN] [2010-10-17 20:56:48,028] [main] s.s.a.c.Config$: 
+Can't load 'akka.conf'.
+One of the three ways of locating the 'akka.conf' file needs to be defined:
+	1. Define the '-Dakka.config=...' system property option.
+	2. Put the 'akka.conf' file on the classpath.
+	3. Define 'AKKA_HOME' environment variable pointing to the root of the Akka distribution.
+I have no way of finding the 'akka.conf' configuration file.
+Using default values everywhere.
+[DEBUG] [2010-10-17 20:56:48,329] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Creating a se.scalablesolutions.akka.dispatch.Dispatchers$globalExecutorBasedEventDrivenDispatcher$ with config [core-pool:16,max-pool:128,timeout:60000,allowCoreTimeout:false,rejectPolicy:CallerRunsPolicy]
+[DEBUG] [2010-10-17 20:56:48,625] [main] s.s.a.r.RemoteClientHandler: [id: 0x2c22d166] OPEN
+[DEBUG] [2010-10-17 20:56:48,629] [New I/O server boss #1 (channelId: 651584550, /127.0.0.1:9999)] s.s.a.r.RemoteServerHandler: [id: 0x5f0f0625, /127.0.0.1:50271 => /127.0.0.1:9999] OPEN
+[DEBUG] [2010-10-17 20:56:48,630] [New I/O server boss #1 (channelId: 651584550, /127.0.0.1:9999)] s.s.a.r.RemoteServerHandler: [id: 0x5f0f0625, /127.0.0.1:50271 => /127.0.0.1:9999] BOUND: /127.0.0.1:9999
+[DEBUG] [2010-10-17 20:56:48,630] [New I/O server boss #1 (channelId: 651584550, /127.0.0.1:9999)] s.s.a.r.RemoteServerHandler: [id: 0x5f0f0625, /127.0.0.1:50271 => /127.0.0.1:9999] CONNECTED: /127.0.0.1:50271
+[DEBUG] [2010-10-17 20:56:48,630] [New I/O server boss #1 (channelId: 651584550, /127.0.0.1:9999)] s.s.a.r.RemoteServerHandler: Remote client connected to [RemoteServer@localhost:9999]
+[INFO] [2010-10-17 20:56:48,636] [main] s.s.a.r.RemoteClient: Starting remote client connection to [localhost:9999]
+[DEBUG] [2010-10-17 20:56:48,639] [New I/O client worker #1-1] s.s.a.r.RemoteClientHandler: [id: 0x2c22d166, /127.0.0.1:50271 => localhost/127.0.0.1:9999] BOUND: /127.0.0.1:50271
+[DEBUG] [2010-10-17 20:56:48,639] [New I/O client worker #1-1] s.s.a.r.RemoteClientHandler: [id: 0x2c22d166, /127.0.0.1:50271 => localhost/127.0.0.1:9999] CONNECTED: localhost/127.0.0.1:9999
+[DEBUG] [2010-10-17 20:56:48,642] [New I/O client worker #1-1] s.s.a.r.RemoteClientHandler: Remote client connected to [localhost/127.0.0.1:9999]
+[DEBUG] [2010-10-17 20:56:48,771] [New I/O server worker #1-2] s.s.a.r.RemoteServerHandler: Received RemoteRequestProtocol[
+id: 1288479059331
+message {
+  serializationScheme: JAVA
+  message: "\254\355\000\005t\000\005Hello"
+}
+actorInfo {
+  uuid: "hello-service"
+  target: "hello-service"
+  timeout: 5000
+  actorType: SCALA_ACTOR
+}
+isOneWay: false
+]
+[DEBUG] [2010-10-17 20:56:48,772] [New I/O server worker #1-2] s.s.a.r.RemoteServerHandler: Dispatching to remote actor [hello-service:hello-service]
+[DEBUG] [2010-10-17 20:56:48,773] [akka:event-driven:dispatcher:global-2] s.s.a.d.ThreadPoolBuilder$MonitorableThread: Created thread akka:event-driven:dispatcher:global-2
+[DEBUG] [2010-10-17 20:56:48,773] [New I/O server worker #1-2] s.s.a.r.RemoteServerHandler: Returning result from actor invocation [World]
+[DEBUG] [2010-10-17 20:56:48,784] [New I/O client worker #1-1] s.s.a.r.RemoteClientHandler: Remote client received RemoteReplyProtocol[
+id: 1288479059331
+message {
+  serializationScheme: JAVA
+  message: "\254\355\000\005t\000\005World"
+}
+isActor: true
+isSuccessful: true
+]
+[DEBUG] [2010-10-17 20:58:18,333] [New I/O server worker #1-2] s.s.a.r.RemoteServerHandler: [id: 0x5f0f0625, /127.0.0.1:50271 => /127.0.0.1:9999] DISCONNECTED
+[DEBUG] [2010-10-17 20:58:18,334] [New I/O server worker #1-2] s.s.a.r.RemoteServerHandler: [id: 0x5f0f0625, /127.0.0.1:50271 => /127.0.0.1:9999] UNBOUND
+[DEBUG] [2010-10-17 20:58:18,334] [New I/O server worker #1-2] s.s.a.r.RemoteServerHandler: [id: 0x5f0f0625, /127.0.0.1:50271 => /127.0.0.1:9999] CLOSED
+[DEBUG] [2010-10-17 20:58:18,334] [New I/O server worker #1-2] s.s.a.r.RemoteServerHandler: Remote client disconnected from [RemoteServer@localhost:9999]
+[WARN] [2010-10-17 20:58:49,547] [main] s.s.a.c.Config$: 
+Can't load 'akka.conf'.
+One of the three ways of locating the 'akka.conf' file needs to be defined:
+	1. Define the '-Dakka.config=...' system property option.
+	2. Put the 'akka.conf' file on the classpath.
+	3. Define 'AKKA_HOME' environment variable pointing to the root of the Akka distribution.
+I have no way of finding the 'akka.conf' configuration file.
+Using default values everywhere.
+[INFO] [2010-10-17 20:58:49,860] [main] s.s.a.r.RemoteNode$: Starting remote server at [localhost:9999]
+[DEBUG] [2010-10-17 20:58:49,933] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Creating a se.scalablesolutions.akka.dispatch.Dispatchers$globalExecutorBasedEventDrivenDispatcher$ with config [core-pool:16,max-pool:128,timeout:60000,allowCoreTimeout:false,rejectPolicy:CallerRunsPolicy]
+[DEBUG] [2010-10-17 20:58:49,973] [main] s.s.a.d.Dispatchers$globalExecutorBasedEventDrivenDispatcher$: Starting up ExecutorBasedEventDrivenDispatcher[akka:event-driven:dispatcher:global]
+	with throughput [5]
+[DEBUG] [2010-10-17 20:58:49,983] [main] s.s.a.r.RemoteNode$: Registering server side remote actor [HelloWorldActor] with id [hello-service]

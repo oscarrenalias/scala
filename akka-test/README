@@ -1,0 +1,13 @@
+This is an example of a simple server providing a remote actor, that is used by a simple client. The sample application is based on Scala 2.8.0 and Akka 0.10.
+
+Maven is also needed to run the examples.
+
+How to run the application:
+
+1) Open one console/terminal and type:
+
+mvn scala:run -Dlauncher=server
+
+2) Open another console/terminal and type:
+
+mvn scala:run -Dlauncher=client
