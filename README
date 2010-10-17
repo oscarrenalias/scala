@@ -1,1 +1,4 @@
-Random scala code
+Some Scala demo and sample applications:
+
+lift-couchdb-test: An example Lift application that uses CouchDB as the backend for a guestbook type of application
+akka-test: An example Akka application that uses remote actors
