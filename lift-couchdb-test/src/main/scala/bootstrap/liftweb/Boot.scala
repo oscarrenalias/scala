@@ -37,9 +37,9 @@ class Boot {
 
     // Build SiteMap
     def sitemap() = SiteMap(
-      Menu("Home") / "index" :: // Simple menu form
+      Menu("Sign Guestbook") / "index" :: // Simple menu form
       Menu("See All") / "all" :: // Simple menu form
-      User.sitemap :_*)
+      Nil :_* )
 
     LiftRules.setSiteMapFunc(sitemap)
 

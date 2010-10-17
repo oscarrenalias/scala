@@ -32,6 +32,8 @@ class Guestbook extends CouchRecord[Guestbook]{
     else List(FieldError(this, <b>The message cannot be empty</b>))
    }	
   }
+
+  //object timestamp extends DateTimeField
  }
  
 object Guestbook extends Guestbook with CouchMetaRecord[Guestbook] {
