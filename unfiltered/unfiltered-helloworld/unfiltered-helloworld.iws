@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4de173ed-46fc-49cf-b641-e68592ed422b" name="Default" comment="u">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unfiltered-helloworld.ipr" afterPath="$PROJECT_DIR$/unfiltered-helloworld.ipr" />
+    <list default="true" id="4de173ed-46fc-49cf-b641-e68592ed422b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unfiltered-helloworld.iws" afterPath="$PROJECT_DIR$/unfiltered-helloworld.iws" />
     </list>
     <ignored path="unfiltered-helloworld.iws" />
@@ -621,7 +620,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just playing with extractors" />
+    <option name="LAST_COMMIT_MESSAGE" value="u" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -635,6 +634,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Just playing with extractors" />
+    <MESSAGE value="u" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
